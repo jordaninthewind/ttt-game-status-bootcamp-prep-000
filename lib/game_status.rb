@@ -44,7 +44,6 @@ WIN_COMBINATIONS = [
 # end
 
 def won?(board)
-winning_array = []
   WIN_COMBINATIONS.each do |i|
     first = i[0]
     second = i[1]
@@ -57,7 +56,6 @@ winning_array = []
       return false
     end
   end
-  return winning_array
 end
 
 def full?()
