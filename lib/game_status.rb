@@ -46,10 +46,15 @@ WIN_COMBINATIONS = [
 def won?(board)
 
   WIN_COMBINATIONS.each do |i|
-    if board[i][0] == "X" && board[i][1] == "X" && board[i][2] == "X"
+    first = i[0]
+    second = i[1]
+    third = i[2]
+    if board[first] == "X" && board[second] == "X" && board[third] == "X"
       return true
       p "X Wins"
-    elsif board[i][0] == "0" && board[i][1] == "0" && board[i][2] == "0"
+    elsif board[first] == "O" && board[second] == "O" && board[third] == "O"
+      return true
+      p "O Wins"
     else
       return false
     end
