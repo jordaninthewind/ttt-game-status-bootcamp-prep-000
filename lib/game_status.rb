@@ -67,7 +67,7 @@ def winner(board)
 
   if x_win > o_win
     return "X"
-  if o_win > x_win
+  elsif o_win > x_win
     return "O"
   end
 end
