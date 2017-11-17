@@ -52,8 +52,8 @@ def won?(board)
       return i
     elsif board[first] == "O" && board[second] == "O" && board[third] == "O"
       return i
-    else
-      return false
+    elsif !(board[first] == "X" && board[second] == "X" && board[third] == "X" && board[first] == "O" && board[second] == "O" && board[third] == "O"
+      return false)
     end
   end
 end
