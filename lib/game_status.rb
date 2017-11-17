@@ -44,21 +44,24 @@ WIN_COMBINATIONS = [
 # end
 
 def won?(board)
-
+winning_array = []
   WIN_COMBINATIONS.each do |i|
     first = i[0]
     second = i[1]
     third = i[2]
     if board[first] == "X" && board[second] == "X" && board[third] == "X"
       return true
+      winning_array << i
       p "X Wins"
     elsif board[first] == "O" && board[second] == "O" && board[third] == "O"
       return true
+      winning_array << i
       p "O Wins"
     else
       return false
     end
   end
+  winning_array
 end
 
 def full?()
