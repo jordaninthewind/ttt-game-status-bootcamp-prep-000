@@ -64,7 +64,7 @@ def winner(board)
     return "X"
   if o_win > x_win
     return "O"
-  if
+  end 
 end
 
 # Define your WIN_COMBINATIONS constant
