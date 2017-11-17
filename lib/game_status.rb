@@ -61,7 +61,7 @@ winning_array = []
       return false
     end
   end
-  winning_array
+  winning_array.to_a
 end
 
 def full?()
