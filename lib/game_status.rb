@@ -22,8 +22,10 @@ def won?(board)
     second = i[1]
     third = i[2]
     if board[first] == "X" && board[second] == "X" && board[third] == "X"
+      winner = "X"
       return i
     elsif board[first] == "O" && board[second] == "O" && board[third] == "O"
+      winner = "O"
       return i
     end
   end
