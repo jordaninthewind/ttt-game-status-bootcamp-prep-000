@@ -45,7 +45,8 @@ end
 def over?(board)
   if full?(board) || won?(board) || draw?(board)
     return true
-  else return false
+  else 
+    return false
   end
 end
 
@@ -59,6 +60,11 @@ def winner(board)
       o_win += 1
     end
   end
+  if x_win > o_win
+    return "X"
+  if o_win > x_win
+    return "O"
+  if 
 end
 
 # Define your WIN_COMBINATIONS constant
