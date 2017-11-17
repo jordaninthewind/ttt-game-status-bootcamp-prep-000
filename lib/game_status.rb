@@ -49,8 +49,16 @@ def over?(board)
   end
 end
 
-def winner()
-
+def winner(board)
+  x_win = 0
+  o_win = 0
+  board.each do |i|
+    if i == "X"
+      x_win += 1
+    elsif i == "O"
+      o_win += 1
+    end
+  end
 end
 
 # Define your WIN_COMBINATIONS constant
