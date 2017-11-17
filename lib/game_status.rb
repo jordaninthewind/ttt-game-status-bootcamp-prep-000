@@ -28,8 +28,14 @@ def won?(board)
   return false
 end
 
-def full?()
-  if 
+def full?(board)
+  board.each do |i|
+    if i == "X" || "O"
+      return true
+    else
+      return false
+    end
+  end    
 end
 
 def draw?()
