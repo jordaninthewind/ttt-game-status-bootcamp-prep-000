@@ -14,8 +14,6 @@ WIN_COMBINATIONS = [
   [2,4,6]  # R to L Diag
 ]
 
-winner = ""
-
 def won?(board)
   WIN_COMBINATIONS.each do |i|
     first = i[0]
