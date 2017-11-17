@@ -59,7 +59,7 @@ winning_array = []
       p "O Wins"
     end
   end
-  winning_array.split.join
+  winning_array.split.join(" ")
 end
 
 def full?()
