@@ -58,6 +58,7 @@ winning_array = []
       winning_array << i
       p "O Wins"
     end
+  return false
   end
   winning_array.split.join(" ")
 end
