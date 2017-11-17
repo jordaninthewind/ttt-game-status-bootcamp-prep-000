@@ -58,7 +58,7 @@ def won?(board)
 end
 
 def full?()
-
+  if 
 end
 
 def draw?()
