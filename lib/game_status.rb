@@ -29,12 +29,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |i|
-    if i == "X" || "O"
-      return true
-    else
-      return false
-    end
+  if board.include?(" " || "")
+    return false
+  else
+    return true
   end    
 end
 
