@@ -53,8 +53,8 @@ def won?(board)
     elsif board[first] == "O" && board[second] == "O" && board[third] == "O"
       return i
     end
-    return false
   end
+  return false
 end
 
 def full?()
