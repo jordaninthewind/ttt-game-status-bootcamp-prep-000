@@ -33,11 +33,13 @@ def full?(board)
     return false
   else
     return true
-  end    
+  end
 end
 
-def draw?()
-
+def draw?(board)
+  if full?(board) && won?(board) == false
+    return true
+  end
 end
 
 def over?()
