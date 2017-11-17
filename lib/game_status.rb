@@ -53,13 +53,11 @@ winning_array = []
       winning_array << i[0]
       winning_array << i[1]
       winning_array << i[2]
-      return true
       p "X Wins"
     elsif board[first] == "O" && board[second] == "O" && board[third] == "O"
       winning_array << i[0]
       winning_array << i[1]
       winning_array << i[2]
-      return true
       p "O Wins"
     else
       return false
