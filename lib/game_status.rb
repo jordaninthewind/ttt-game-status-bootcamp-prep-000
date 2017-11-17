@@ -50,18 +50,22 @@ winning_array = []
     second = i[1]
     third = i[2]
     if board[first] == "X" && board[second] == "X" && board[third] == "X"
+      winning_array << i[0]
+      winning_array << i[1]
+      winning_array << i[2]
       return true
-      winning_array << i
       p "X Wins"
     elsif board[first] == "O" && board[second] == "O" && board[third] == "O"
+      winning_array << i[0]
+      winning_array << i[1]
+      winning_array << i[2]
       return true
-      winning_array << i
       p "O Wins"
     else
       return false
     end
   end
-  winning_array.split.join(" ")
+  winning_array
 end
 
 def full?()
