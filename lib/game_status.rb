@@ -49,6 +49,7 @@ def won?(board)
     if board[i][0] == "X" && board[i][1] == "X" && board[i][2] == "X"
       return true
       p "X Wins"
+    elsif board[i][0] == "0" && board[i][1] == "0" && board[i][2] == "0"
     else
       return false
     end
