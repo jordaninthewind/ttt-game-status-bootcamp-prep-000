@@ -45,9 +45,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  WIN_COMBINATIONS.each do |win|
-    win.each do |i|
-      if win[i][0] == "X" && win[i][1] == "X" && win[i][2] == "X"
+  WIN_COMBINATIONS.each do |i|
+      if board[i][0] == "X" && board[i][1] == "X" && board[i][2] == "X"
         return true
         p "X Wins"
       else
