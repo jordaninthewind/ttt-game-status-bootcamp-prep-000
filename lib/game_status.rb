@@ -14,6 +14,8 @@ WIN_COMBINATIONS = [
   [2,4,6]  # R to L Diag
 ]
 
+winner = ""
+
 def won?(board)
   WIN_COMBINATIONS.each do |i|
     first = i[0]
@@ -60,12 +62,12 @@ end
 #       o_win += 1
 #     end
 #   end
-# 
+#
 #   if x_win > o_win
 #     return "X"
 #   if o_win > x_win
 #     return "O"
-#   end 
+#   end
 # end
 
 # Define your WIN_COMBINATIONS constant
