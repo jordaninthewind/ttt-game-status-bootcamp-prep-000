@@ -57,11 +57,9 @@ winning_array = []
       return true
       winning_array << i
       p "O Wins"
-    else
-      return false
     end
   end
-  winning_array.to_a
+  winning_array.split.join
 end
 
 def full?()
